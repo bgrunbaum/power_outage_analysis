@@ -46,14 +46,20 @@ Comparing
 
 I then wanted to look at the difference in mean durations, which I did by using groupby. This was the resulting table:
 
-'| daynight   |    duration |\n|:-----------|------------:|\n| day        | 1.59588e+14 |\n| night      | 1.51749e+14 |'
+| daynight | duration                  |
+|:----------|:-------------------------|
+| day      | 1 days 20:19:47.900552486 |
+| night    | 1 days 18:09:08.769230769 |
 
 
 As we can see, there doesn't appear to be that much of a difference, only around 2 hours longer for night power outages. However, the data is extremely skewed, as we saw above. There are extremely large values that could be skewing our data; my next idea was to try to groupby and look at medians and see if we see a difference. The results are below:
 
-'| daynight   |   duration |\n|:-----------|-----------:|\n| day        |  2.802e+13 |\n| night      |  7.197e+13 |'
+| daynight | duration                  |
+|:----------|:-------------------------|
+| day      | 0 days 07:47:00 |
+| night    | 	0 days 19:59:30 |
 
-The median shows a far greater difference. Based off of these statistics, my idea was to try to see if this difference is something that we see across the data, or if this is a unique case to our dataset here.
+The median shows a far greater difference, of about 12 hours. Based off of these statistics, my idea was to try to see if this difference is something that we see across the data, or if this is a unique case to our dataset here.
 
 ## Hypothesis Testing
 
