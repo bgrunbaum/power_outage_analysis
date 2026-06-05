@@ -63,6 +63,27 @@ The median shows a far greater difference, of about 12 hours. Based off of these
 
 ## Hypothesis Testing
 
+### Null Hypothesis: 
+The duration for outages that begin during the day and the duration for outages that begin during night are approximately the same.
+
+### Alternative Hypothesis:
+The duration for outages that begin during the day are shorter than the duration for outages that begin at night.
+
+### Test Statistic:
+
+For my test statistic, I have decided to use the difference in medians between the night and the day durations. Given the fact that the mean values will be extremely skewed by the large outliers, I have decided to instead use the median as I believe it should be much more representative of a "middle ground" of our data, as seen in the exploration above.
+
+I have also decided to pursue a permutation test where I shuffled the `daynight` column, and then computed the difference in the median from those shuffled labels and their corresponding duration distributions. I ran this bootstrapping test 10000 times.
+
+### P-Value and Statistical Significance:
+
+I have chosen the p-value threshold of .05, which is for a 95% confidence interval/test significance. 
+
+### Conclusion
+
+After running the bootstrapping test and comparing it to the observed statistic (seeing which values were greater than or equal to the observed statistic), I got a p-value of .0001. This is far below the significance threshold of .05, so yes, we can reject our null hypothesis. This allows us to believe that there is a statistically significant positive difference in the difference in medians between the durations for the night and the day power outages; meaning that the median duration for night is found to be generally higher than the median duration for daytime power outages.
+
+
 
 
 
