@@ -41,7 +41,7 @@ My next step was to calculate the duration of the outage, which I did by combini
 Once I completed the implementation of the duration column, I converted it into hours using the total_seconds() function and then dividing it by 3600, which is the total number of seconds in an hour. You can see the plots below.
 
 <iframe
-  src="assets/total_dur_hist.html"
+  src="assets/total_dur_dist.html"
   width="800"
   height="600"
   frameborder="0"
@@ -89,12 +89,16 @@ In terms of a column that I doubted had a relation with duration, I chose month,
   frameborder="0"
 ></iframe>
 
+The plot above is for the month distribution.
+
 <iframe
   src="assets/state_dist.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
+
+This plot is for the state distribution.
 
 ## Hypothesis Testing
 
