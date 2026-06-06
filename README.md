@@ -50,7 +50,7 @@ Once I completed the implementation of the duration column, I converted it into 
 I then was curious to see if the distribution of duration varied by cause. It seems to be the case that by and large, it does not---besides potentially the more intentional outages, whether it be because of attack or public appeal, perhaps because they can prepare for them or they know how to fix it better than just trying to fix an accident. 
 
 <iframe
-  src="assets/state_dist.html"
+  src="assets/box_cause_duration.html"
   width="800"
   height="600"
   frameborder="0"
